@@ -1,0 +1,19 @@
+ 25 steps from gate to admin block
+ Room 1 and 2 there are 18 steps from gate
+ from Room 1 and 2 there are 8 steps from entrance
+ bifference of distance between each Room is  8 steps
+ Server room 4 steps
+ Lab 9 there are 18 steps from badminton court
+ Ground and badminton court 9 steps
+ 36 steps to canteen from badminton court
+ 40 steps to book shop from canteen or ground
+ 5 steps from book shop to bathroon
+ 30 steps from bathroom to wasoo area
+ 30 steps from washroom to room 8
+ 70 steps to computer lab from room 9
+57 steps from computer lab to gate
+main gate to ->Basement 90
+main gate to Cs department 118
+main gate to Cafe 221
+main gate to Cafe 2  245
+main gate to Auditorium 255

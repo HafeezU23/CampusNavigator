@@ -6,29 +6,136 @@ app = Flask(__name__)
 CORS(app)
 
 graph = {
-    'Library': {'Admin Block': 100, 'Cafeteria': 150, 'Room 13': 60},
-    'Admin Block': {'Library': 100, 'Computer Labs': 120, 'Auditorium': 200, 'Room 1': 50},
-    'Cafeteria': {'Library': 150, 'Computer Labs': 80},
-    'Computer Labs': {'Admin Block': 120, 'Cafeteria': 80, 'Auditorium': 100, 'Room 13': 100},
-    'Auditorium': {'Admin Block': 200, 'Computer Labs': 100},
-    'Hostel': {'Computer Labs': 170},
-    
-    'Room 1': {'Admin Block': 50, 'Room 2': 50},
-    'Room 2': {'Room 1': 50, 'Room 3': 50},
-    'Room 3': {'Room 2': 50, 'Room 4': 50},
-    'Room 4': {'Room 3': 50, 'Room 5': 50},
-    'Room 5': {'Room 4': 50, 'Room 6': 50},
-    'Room 6': {'Room 5': 50, 'Room 7': 50},
-    'Room 7': {'Room 6': 50, 'Room 8': 50},
-    'Room 8': {'Room 7': 50, 'Room 9': 120},
-    'Room 9': {'Room 8': 120, 'Room 10': 50},
-    'Room 10': {'Room 9': 50, 'Room 11': 50},
-    'Room 11': {'Room 10': 50, 'Room 12': 50},
-    'Room 12': {'Room 11': 50, 'Room 13': 50},
-    'Room 13': {'Room 12': 50, 'Library': 60, 'Computer Labs': 100},
+    'Main Gate': {
+        'Admin Block': 25,
+        'Room 1': 18,
+        'Room 2': 18,
+        'Basement': 90,
+        'CS Department': 118,
+        'Cafe': 221,
+        'Cafe 2': 245,
+        'Auditorium': 255
+    },
+    'Admin Block': {
+        'Main Gate': 25,
+        'Room 1': 8
+    },
+    'Room 1': {
+        'Main Gate': 18,
+        'Admin Block': 8,
+        'Room 2': 8
+    },
+    'Room 2': {
+        'Main Gate': 18,
+        'Room 1': 8,
+        'Room 3': 8
+    },
+    'Room 3': {
+        'Room 2': 8,
+        'Room 4': 8
+    },
+    'Room 4': {
+        'Room 3': 8,
+        'Room 5': 8,
+        
+    },
+    'Room 5': {
+        'Room 4': 8,
+        'Room 6': 8
+    },
+    'Room 6': {
+        'Room 5': 8,
+        'Room 7': 8
+    },
+    'Room 7': {
+        'Room 6': 8,
+        'Lab 9': 8,
+        'Server Room': 8,
+    },
+    'Room 8': {
+        'Room 7': 8,
+        'Lab 9': 8,
+        'Server Room': 8,
+    },
+    'Lab 9': {  # Previously Room 8
+        'Room 7': 8,
+        'Washroom': 30,
+        'Badminton Court': 18
+    },
+    'Room 9': {
+        'Computer Labs': 70,
+        'Server Room': 12,
+    },
+    'Room 10': {
+        'Room 11': 8
+    },
+    'Room 11': {
+        'Room 10': 8,
+        'Room 12': 8
+    },
+    'Room 12': {
+        'Room 11': 8,
+        'Room 13': 8
+    },
+    'Room 13': {
+        'Room 12': 8,
+        'Library': 8
+    },
+    'Library': {
+        'Room 13': 8
+    },
+    'Computer Labs': {
+        'Room 9': 70,
+        'Main Gate': 57
+    },
+    'Server Room': {
+        'Room 8': 8,
+        'Room 7': 8
+    },
+    'Badminton Court': {
+        'Lab 9': 18,
+        'Ground': 9,
+        'Cafeteria': 36
+    },
+    'Ground': {
+        'Badminton Court': 9,
+        'Book Shop': 40,
+        'Main Gate': 200
 
-    'Washrooms': {'Room 9': 100}
+    },
+    'Book Shop': {
+        'Ground': 40,
+        'Cafeteria': 40,
+        'Washroom': 5
+    },
+    'Cafeteria': {
+        'Badminton Court': 36,
+        'Book Shop': 40
+    },
+    'Washroom': {
+        'Book Shop': 5,
+        'Wash Area': 30
+    },
+    'Wash Area': {
+        'Washroom': 30
+    },
+    'Basement': {
+        'Main Gate': 90
+    },
+    'CS Department': {
+        'Main Gate': 118
+    },
+    'Cafe': {
+        'Main Gate': 221
+    },
+    'Cafe 2': {
+        'Main Gate': 245
+    },
+    'Auditorium': {
+        'Main Gate': 255
+    }
 }
+
 
 def dijkstra(start, end):
     pq = [(0, start, [])]
