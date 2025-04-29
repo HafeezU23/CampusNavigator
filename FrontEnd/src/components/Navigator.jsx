@@ -20,17 +20,15 @@ const buildings = [
   "Room 11",
   "Room 12",
   "Room 13",
-  "Room 14",
+  "Lab 9/Room 14",
   "Room 15",
   "Room 16",
   "Room 17",
-  "Lab 9",
   "Computer Labs",
   "Server Room",
   "Library",
-  "Cafeteria",
   "Auditorium",
-  "Washrooms",
+  "Washroom",
   "Main Gate",
   "Play Ground", // Added Play Ground
   
@@ -51,17 +49,15 @@ const buildingPositions = {
   "Room 11": { x: 300, y: 200 },
   "Room 12": { x: 400, y: 200 },
   "Room 13": { x: 500, y: 200 },
-  "Room 14": { x: 600, y: 200 },
+  "Room 14/ Lab 9": { x: 600, y: 200 },
   "Room 15": { x: 700, y: 200 },
   "Room 16": { x: 800, y: 200 },
   "Room 17": { x: 900, y: 200 }, // Moved to the next level
-  "Lab 9": { x: 100, y: 300 },    // Moved to the next level
   "Computer Labs": { x: 200, y: 300 }, // Moved and reordered
   "Library": { x: 300, y: 300 },   // Moved and reordered
-  "Cafeteria": { x: 400, y: 300 }, // Moved and reordered
-  "Auditorium": { x: 500, y: 300 }, // Moved and reordered
+  //   "Auditorium": { x: 500, y: 300 }, // Moved and reordered
   "Server Room": { x: 600, y: 300 }, // Moved
-  "Washrooms": { x: 700, y: 300 }, // Moved
+  "Washroom": { x: 700, y: 300 }, // Moved
   "Main Gate": { x: 200, y: 400 },
   "Play Ground": { x: 300, y: 400 },
 };

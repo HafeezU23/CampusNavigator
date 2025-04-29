@@ -14,7 +14,7 @@ const HeroSection = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.5, // Only applies to the background
+            opacity: 0.75, 
           }}
         ></div>
 

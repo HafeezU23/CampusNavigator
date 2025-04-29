@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import { Routes, Route } from 'react-router-dom'
 import Navigator from './components/Navigator'
 import LoadingPage from './components/LoadingPage'
+import Footer from './components/Footer'
 import { useEffect, useState } from 'react'
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/navigator' element={<Navigator />}></Route>
       
       </Routes>
+      <Footer/>
       </>
       )
      

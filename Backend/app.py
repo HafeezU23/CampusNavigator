@@ -18,44 +18,55 @@ graph = {
     },
     'Admin Block': {
         'Main Gate': 25,
-        'Room 1': 8
+        'Room 1': 8,
+        'Room 2': 8
     },
     'Room 1': {
         'Main Gate': 18,
         'Admin Block': 8,
-        'Room 2': 8
+        'Room 2': 3,
+        'Room 4': 8
+
     },
     'Room 2': {
         'Main Gate': 18,
-        'Room 1': 8,
+        'Admin Block': 8,
+        'Room 1': 3,
         'Room 3': 8
     },
     'Room 3': {
+        'Room 4': 3,
+        'Room 5': 12,
         'Room 2': 8,
-        'Room 4': 8
+
     },
     'Room 4': {
-        'Room 3': 8,
-        'Room 5': 8,
+        'Room 1': 8,
+        'Room 3': 3,
+        'Room 6': 12,
         
     },
     'Room 5': {
-        'Room 4': 8,
-        'Room 6': 8
+        'Room 3': 12,
+         'Room 7': 8,
+        'Room 6': 3
     },
     'Room 6': {
-        'Room 5': 8,
-        'Room 7': 8
+        'Room 4': 12,
+        'Room 5': 3,
+        'Room 8': 8
     },
     'Room 7': {
-        'Room 6': 8,
-        'Lab 9': 8,
-        'Server Room': 8,
+        'Room 8': 3,
+        'Room 7': 8,
+        'Server Room': 10,
+        'Washroom': 30
     },
     'Room 8': {
-        'Room 7': 8,
-        'Lab 9': 8,
-        'Server Room': 8,
+        'Room 7': 3,
+        'Room 9': 8,
+        'Room 6':8,
+        'Server Room': 10,
     },
     'Lab 9': {  # Previously Room 8
         'Room 7': 8,
@@ -63,24 +74,54 @@ graph = {
         'Badminton Court': 18
     },
     'Room 9': {
+        'Room 8': 8,
+        'Room 10': 8,
         'Computer Labs': 70,
         'Server Room': 12,
     },
     'Room 10': {
-        'Room 11': 8
+        'Room 11': 3,
+        'Room 9': 10,
+      
+        
     },
     'Room 11': {
-        'Room 10': 8,
-        'Room 12': 8
+        'Room 10': 3,
+        'Room 12': 3,
     },
     'Room 12': {
-        'Room 11': 8,
-        'Room 13': 8
+        'Room 11': 3,
+        'Room 13': 25
     },
     'Room 13': {
         'Room 12': 8,
-        'Library': 8
+        'Room 11': 8
     },
+    'Lab 9': {
+        'Room 13': 3,
+        'Room 16': 10,
+        'Washroom':40,
+        
+    },
+    'Room 15': {
+
+        'Room 13': 4,
+        'Room 17': 4,
+        'Room 16': 4,
+        
+    },
+    'Room 16': {
+        'Room 12': 8,
+        'Room 17': 4,
+         'Room 15': 4
+        
+    },
+    'Room 17': {
+        'Room 16': 4,
+         'Room 18': 4,
+        
+    },
+
     'Library': {
         'Room 13': 8
     },
@@ -89,15 +130,17 @@ graph = {
         'Main Gate': 57
     },
     'Server Room': {
-        'Room 8': 8,
-        'Room 7': 8
+        'Room 8': 10,
+        'Room 7': 10,
+         
+        
     },
     'Badminton Court': {
         'Lab 9': 18,
         'Ground': 9,
         'Cafeteria': 36
     },
-    'Ground': {
+    'Play Ground': {
         'Badminton Court': 9,
         'Book Shop': 40,
         'Main Gate': 200
@@ -110,14 +153,15 @@ graph = {
     },
     'Cafeteria': {
         'Badminton Court': 36,
-        'Book Shop': 40
+        'Ground': 36,
+        'Book Shop': 40,
+        'Auditorium': 36,
+
     },
     'Washroom': {
         'Book Shop': 5,
-        'Wash Area': 30
-    },
-    'Wash Area': {
-        'Washroom': 30
+        
+        
     },
     'Basement': {
         'Main Gate': 90
@@ -128,12 +172,7 @@ graph = {
     'Cafe': {
         'Main Gate': 221
     },
-    'Cafe 2': {
-        'Main Gate': 245
-    },
-    'Auditorium': {
-        'Main Gate': 255
-    }
+   
 }
 
 
@@ -172,3 +211,5 @@ def shortest_path():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+

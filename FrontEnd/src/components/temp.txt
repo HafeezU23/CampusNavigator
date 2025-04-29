@@ -17,3 +17,6 @@ main gate to Cs department 118
 main gate to Cafe 221
 main gate to Cafe 2  245
 main gate to Auditorium 255
+
+
+
