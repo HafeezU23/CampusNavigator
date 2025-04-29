@@ -80,53 +80,42 @@ graph = {
         'Server Room': 12,
     },
     'Room 10': {
-        'Room 11': 3,
-        'Room 9': 10,
-      
-        
+        'Room 11': 8
     },
     'Room 11': {
-        'Room 10': 3,
-        'Room 12': 3,
+        'Room 10': 8,
+        'Room 12': 8
     },
     'Room 12': {
-        'Room 11': 3,
-        'Room 13': 25
+        'Room 11': 8,
+        'Room 13': 8
     },
     'Room 13': {
         'Room 12': 8,
         'Room 11': 8
     },
-    'Lab 9': {
-        'Room 13': 3,
-        'Room 16': 10,
-        'Washroom':40,
+    'Room 14': {
+        'Room 13': 8,
+        'Room 15': 8
         
     },
     'Room 15': {
-
-        'Room 13': 4,
-        'Room 17': 4,
-        'Room 16': 4,
+        'Room 12': 8,
         
     },
     'Room 16': {
         'Room 12': 8,
-        'Room 17': 4,
-         'Room 15': 4
         
     },
     'Room 17': {
-        'Room 16': 4,
-         'Room 18': 4,
+        'Room 12': 8,
         
     },
-
     'Library': {
         'Room 13': 8
     },
     'Computer Labs': {
-        'Room 9': 70,
+        'Room 9': 40,
         'Main Gate': 57
     },
     'Server Room': {
@@ -161,7 +150,9 @@ graph = {
     'Washroom': {
         'Book Shop': 5,
         
-        
+    },
+    'Wash Area': {
+        'Washroom': 30
     },
     'Basement': {
         'Main Gate': 90
@@ -211,5 +202,3 @@ def shortest_path():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
